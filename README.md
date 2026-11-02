@@ -21,7 +21,7 @@ A more comprehensive **Indonesian localized food database was planned**, not com
 - [`app/src/main/AndroidManifest.xml`](app/src/main/AndroidManifest.xml) — Android application manifest
 - [`docs/RECOVERY_NOTES.md`](docs/RECOVERY_NOTES.md) — version selection and limitations
 
-**Archive completeness:** GitHub currently contains source/configuration text only. The historical Android project used GIF animations, Android launcher assets and a Gradle wrapper; these binary assets are retained in a separate local recovery backup and are **not included in this checkout**. The repository, as published, is **not a standalone, verified build**. To reconstruct the app, copy the missing assets into the corresponding Android resource paths from the original project archive.
+**Archive completeness:** The GitHub repository now includes recovered Kotlin source, Gradle configuration, and compressed bunny GIF previews under the expected drawable names. The two preview files currently use the same simplified animation; original full-resolution idle and eating animations, launcher assets, and the Gradle wrapper JAR are preserved in the separate recovered Android Studio project archive. The GitHub checkout itself has **not been verified to build** and is not an exact reproduction of the original assets.
 
 ## How it was intended to work
 
@@ -37,7 +37,7 @@ Jetpack Compose UI
 
 ## Environment and limitations
 
-The recovered project used Android Studio, Kotlin, Jetpack Compose, Coil for GIFs, and Kotlin serialization. No successful clean-machine compilation, emulator test or working live OpenRouter API call has been independently confirmed here. You must provide your own API key, verify current model availability, restore missing assets, and potentially correct historic compiler issues.
+The recovered project used Android Studio, Kotlin, Jetpack Compose, Coil for GIFs, and Kotlin serialization. No successful clean-machine compilation, emulator test or working live OpenRouter API call has been independently confirmed here. You must provide your own API key, verify current model availability, restore the original assets and Gradle wrapper files from the recovered project archive, and potentially correct historic compiler issues.
 
 **Security note:** The historical app stored its API key using unencrypted `SharedPreferences`, which should **not** be used for production secret storage. The curated Kotlin source removes a debugging line that printed part of an API key. The API key is not included.
 
