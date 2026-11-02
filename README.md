@@ -43,6 +43,12 @@ The recovered project used Android Studio, Kotlin, Jetpack Compose, Coil for GIF
 
 **Accuracy note:** Food and calorie outputs are exploratory estimates, not medically validated nutritional advice. No consumer release, user traction or revenue is claimed.
 
+## Business concept and investor pitch
+
+The app was developed alongside a proposed Indonesian-market business model. See the [historical investor-pitch overview](docs/BUSINESS_PITCH_OVERVIEW.md) for the problem statement, proposed features, roadmap, market analysis, and commercialization approach.
+
+The pitch included aspirational features (such as photo-based calorie estimation, expanded Indonesian food data and a fine-tuned model) and projections through 2027. **These were plans and forecasts, not completed features, customers or realized revenue.** The original PowerPoint is retained separately and is not currently included in this GitHub checkout.
+
 ## Background
 
 Independent venture, **June–October 2025**. The related investor pitch describes proposals, projections and commercialization plans, not realized outcomes.
